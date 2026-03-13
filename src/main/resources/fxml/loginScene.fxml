@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.view.gui.LoginSceneController">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="413.0" prefWidth="647.0" stylesheets="@styles/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="200.0">
+      
+          <GridPane fx:id="gridPane" layoutX="100.0" layoutY="221.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="221.0">
+      
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="377.0" minWidth="118.0" prefWidth="189.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="377.0" minWidth="118.0" prefWidth="204.00000000000003" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="413.0" minWidth="148.0" prefWidth="148.0" />
+            </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="93.0" minHeight="30.0" prefHeight="47.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="59.0" minHeight="22.0" prefHeight="31.333333333333343" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="62.0" minHeight="18.0" prefHeight="38.0" vgrow="ALWAYS" />
+               <RowConstraints maxHeight="66.0" minHeight="22.0" prefHeight="46.0" vgrow="ALWAYS" />
+              </rowConstraints>
+      
+              <Label fx:id="usernameLabel" layoutX="134.0" layoutY="200.0" prefHeight="17.0" prefWidth="174.0" text="               Username: " textAlignment="RIGHT" />
+              <TextField fx:id="usernameField" layoutX="218.0" layoutY="154.0" GridPane.columnIndex="1" />
+      
+      
+              <RadioButton fx:id="TCP" prefHeight="17.0" prefWidth="63.0" text="TCP" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+              <RadioButton fx:id="RMI" text="RMI" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+              <Label fx:id="usernameError" layoutX="348.0" layoutY="95.0" prefHeight="18.0" prefWidth="173.0" textFill="#a81010" GridPane.columnIndex="2" />
+              <Label fx:id="protocolError" layoutX="348.0" layoutY="95.0" prefHeight="17.0" prefWidth="174.0" textFill="#a81010" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      
+              <Button fx:id="loginButton" layoutX="367.0" layoutY="239.0" onMouseClicked="#login" text="Login" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+              <Button fx:id="communication" layoutX="367.0" layoutY="239.0" onMouseClicked="#communicationChoice" text="Choose" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="portLabel"  layoutX="10.0" layoutY="25.0" prefHeight="17.0" prefWidth="174.0" text="               Porta: " textAlignment="RIGHT" visible="false" />
+            <TextField fx:id="portField" layoutX="151.0" layoutY="21.0" GridPane.columnIndex="1" visible="false" />
+            <Button fx:id="portButton" layoutX="355.0" layoutY="138.0" onMouseClicked="#portChoice" text="Choose" GridPane.columnIndex="2" GridPane.rowIndex="3" visible="false" />
+          </GridPane>
+          <GridPane fx:id="ShelfieLogo" layoutX="100.0" layoutY="30.0" prefHeight="216.0" prefWidth="542.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="30.0">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+              <ImageView fx:id="imageView" fitHeight="209.0" fitWidth="545.0">
+                  <Image url="@../assets/Publisher material/Title 2000x618px.png" />
+              </ImageView>
+          </GridPane>
+      </AnchorPane>
+   </children>
+</AnchorPane>

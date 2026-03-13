@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.view.gui.FirstConnectionSceneController">
+   <children>
+      <AnchorPane fx:id="rootPane" stylesheets="@styles/login.css" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="200.0">
+          
+          <GridPane fx:id="gridPane" layoutX="244.0" prefHeight="163.0" prefWidth="524.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0">
+      
+              <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="377.0" minWidth="118.0" prefWidth="189.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="377.0" minWidth="118.0" prefWidth="204.00000000000003" />
+                  <ColumnConstraints maxWidth="413.0" minWidth="148.0" prefWidth="148.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="93.0" minHeight="30.0" prefHeight="47.0" />
+                  <RowConstraints maxHeight="59.0" minHeight="22.0" prefHeight="40.0" />
+                  <RowConstraints maxHeight="62.0" minHeight="18.0" prefHeight="41.0" />
+                  <RowConstraints maxHeight="66.0" minHeight="22.0" prefHeight="35.0" />
+              </rowConstraints>
+      
+              <RadioButton fx:id="TwoPlayers" prefHeight="17.0" prefWidth="63.0" text="3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+              <RadioButton fx:id="ThreePlayers" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <RadioButton fx:id="FourPlayers" text="4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      
+              <Label layoutX="134.0" layoutY="200.0" prefHeight="17.0" prefWidth="174.0" text="  Choose number of players: " textAlignment="RIGHT" />
+      
+              <Button layoutX="367.0" layoutY="239.0" onMouseClicked="#selectNumOfPlayers" text="Confirm" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         
+             <Label fx:id="numError" prefHeight="17.0" prefWidth="174.0" textFill="#a81010" GridPane.columnIndex="1" />
+          </GridPane>
+      </AnchorPane>
+   </children>
+</AnchorPane>

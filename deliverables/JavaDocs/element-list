@@ -1,0 +1,17 @@
+module:it.polimi.ingsw
+it.polimi.ingsw
+it.polimi.ingsw.controller
+it.polimi.ingsw.Exception
+it.polimi.ingsw.model
+it.polimi.ingsw.model.Board
+it.polimi.ingsw.model.CommonCards
+it.polimi.ingsw.model.PersonalCards
+it.polimi.ingsw.model.Player
+it.polimi.ingsw.model.Tile
+it.polimi.ingsw.Network.Client
+it.polimi.ingsw.Network.Client.Communication
+it.polimi.ingsw.Network.Messages
+it.polimi.ingsw.Network.Server
+it.polimi.ingsw.Utils
+it.polimi.ingsw.view.cli
+it.polimi.ingsw.view.gui

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.view.gui.ConnectionSceneController">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="498.0" prefWidth="750.0" stylesheets="@styles/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+      
+         <ProgressIndicator fx:id="progressIndicator" layoutX="279.0" layoutY="251.0" prefHeight="40.0" prefWidth="186.0" progress="0.0" AnchorPane.leftAnchor="279.0" AnchorPane.rightAnchor="285.0" />
+         <Label fx:id="loadingMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="148.0" prefHeight="56.0" prefWidth="341.0" textFill="#a81010" AnchorPane.bottomAnchor="338.33333333333337" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="148.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="usernameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="148.0" prefHeight="56.0" prefWidth="341.0" textFill="#a81010" visible="false" AnchorPane.bottomAnchor="338.33333333333337" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="148.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="usernameField" layoutX="422.0" layoutY="258.0" visible="false" />
+         <Button fx:id="reSendButton" layoutX="350.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#reSendUsername" text="Send" visible="false" />
+         <Label fx:id="rimettiUsername" alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="302.0" prefHeight="56.0" prefWidth="341.0" textFill="#a81010" visible="false" AnchorPane.bottomAnchor="184.33333333333337" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="281.99999999999994" AnchorPane.topAnchor="302.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </children>
+</AnchorPane>
