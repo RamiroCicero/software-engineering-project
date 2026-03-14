@@ -95,3 +95,5 @@ L'esecuzione del server avviene attraverso il seguente comando:
 - Bernasconi Margherita 
 - Cicero Ramiro
 - Cozzolino Nicola
+
+# Voto finale ----> 30
